@@ -5,7 +5,7 @@ from app import static_findings
 
 def test_valid_code():
     findings = static_findings("print('hello')")
-    assert findings[0].kind == "No obvious issue"
+    assert findings[0].kind == "Looks good"
 
 
 def test_syntax_error():

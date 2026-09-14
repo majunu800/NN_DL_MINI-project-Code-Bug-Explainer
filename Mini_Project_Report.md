@@ -151,8 +151,12 @@ for number in numbers
 Output:
 
 ```text
-Syntax error: expected ':'
-How to fix: Add a colon after the for-loop statement.
+Diagnosis
+
+Syntax error (line 1)
+What happened: Python could not understand this line because it expected ':'.
+Why it matters: A syntax error stops the program before it can run.
+Recommended fix: Add a colon (:) at the end of the for-loop statement.
 ```
 
 Corrected code:
@@ -173,8 +177,12 @@ print(total)
 Output:
 
 ```text
-Possible logic error: total may be used before it is defined.
-How to fix: Define total before using it, or check the variable name.
+Diagnosis
+
+Possible logic error (line 1)
+What happened: The name total is used here, but Python cannot find where it was created.
+Why it matters: The program may stop with a NameError, or the variable name may be misspelled.
+Recommended fix: Check the spelling and create total before line 1.
 ```
 
 ### Example 3: Valid Code
@@ -189,22 +197,20 @@ def greet(name):
 Output:
 
 ```text
-No obvious issue: The code is syntactically valid and passed the basic static checks.
+Diagnosis
+
+Looks good
+What happened: Python can read this code, and the basic checks did not find an obvious problem.
+Why it matters: Run the program with real examples too. Static checks cannot prove that every result is correct.
 ```
 
 ### Interface Output
 
-The Gradio interface displays the submitted Python code and the diagnosis in the browser. It can be accessed locally at `http://127.0.0.1:7861` while the application is running.
+The Gradio interface uses a colorful two-panel layout. The left panel accepts Python code and has Debug code and Clear buttons. The right panel displays the diagnosis in a consistent format: **What happened**, **Why it matters**, and **Recommended fix**. It can be accessed locally at `http://127.0.0.1:7861` while the application is running.
 
 ## 7. GitHub Repository Link
 
-**GitHub repository:** Add the repository URL here after publishing the project.
-
-Example:
-
-```text
-https://github.com/<your-username>/pyexplain-python-debugger
-```
+**GitHub repository:** https://github.com/majunu800/NN_DL_MINI-project-Code-Bug-Explainer
 
 ## Conclusion
 
