@@ -158,5 +158,8 @@ if __name__ == "__main__":
     .hero h1 { color: white !important; margin-bottom: 6px; }
     .panel { border: 1px solid #dfe5f2; border-radius: 14px; background: rgba(255,255,255,.86); padding: 8px; }
     .result { border-left: 5px solid #f28c28; }
+    .result, .result * { color: #172033 !important; }
+    .result h2, .result h3 { color: #243b8f !important; }
+    .result code { color: #b45309 !important; background: #fff1d6 !important; }
     footer { display: none !important; }
     """)
