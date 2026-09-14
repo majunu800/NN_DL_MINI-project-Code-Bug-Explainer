@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+outputs/
+models/
+data/*.jsonl
+!data/sample_debugging.jsonl
+.cache/
